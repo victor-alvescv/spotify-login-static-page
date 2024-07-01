@@ -15,7 +15,6 @@ body {
 
 .background {
     background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
-    width: 100vw;
     height: 100%;
     display: flex;
     align-items: center;
@@ -23,15 +22,17 @@ body {
     padding: 32px;
 }
 
+.top--logo {
+    height: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .card--wrapper {
     width: 734px;
     height: 1000px;
     background-color: #121212;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    flex-direction: column;
 }
 
 .card {
@@ -47,6 +48,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .connect--wrapper {
@@ -60,9 +62,31 @@ body {
 .connect {
     font-size: 14px;
     font-weight: 700;
-    padding: 15px 80px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #878787;
     border-radius: 50px;
+    width: 324px;
+    height: 48px;
+    max-width: 324px;
+    position: relative;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.connect p {
+    margin-left: 10px;
+}
+
+.connect img {
+    position: absolute;
+    left: 10%;
+}
+
+.connect:hover {
+    border-color: #ffffffbe;
 }
 
 .division__line {
